@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Your Cart</h2>
+
+<table border="1">
+    <tr>
+        <th>Book</th>
+        <th>Qty</th>
+        <th>Price</th>
+    </tr>
+
+    {% for item in cart.items %}
+    <tr>
+        <td>{{ item.title }}</td>
+        <td>{{ item.quantity }}</td>
+        <td>{{ item.price }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+<a href="/books/">⬅ Back to books</a>
+{% endblock %}

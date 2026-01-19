@@ -1,0 +1,5 @@
+{
+    "python.analysis.extraPaths": [
+        "./clean/framework/django_project/bookstore"
+    ]
+}
